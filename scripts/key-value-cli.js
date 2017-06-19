@@ -24,4 +24,8 @@ class API {
   getServices() {
     return this.http.get(this.baseURL + SLASH + 'services');
   }
+
+  createRun(properties) {
+    return this.http.post(this.baseURL + SLASH + 'run' + SLASH + 'create', properties)
+  }
 }
