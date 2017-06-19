@@ -1,0 +1,61 @@
+div.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  div.container {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  div.container {
+    width: 800px;
+  }
+}
+
+div.services-container p.services-title {
+  font-size: 24px;
+}
+
+div.services-container ul.services,
+li.service-container ul.instances {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+ul.services li.service-container,
+ul.instances li.instance-container {
+  list-style: none;
+}
+
+ul.instances li.instance-container {
+  background-color: #c0f8c0;
+}
+
+ul.services li.service-container:hover {
+  background-color: #e8e8e8;
+}
+
+ul.instances li.instance-container:hover {
+  background-color: #b0e8b0;
+}
+
+li.service-container p.service-title,
+li.instance-container p.instance-title {
+  font-size: 20px;
+  position:relative;
+  margin: 0;
+  padding: 10px 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+li.service-container span.service-status,
+li.instance-container span.instance-status {
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+}
